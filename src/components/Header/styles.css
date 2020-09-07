@@ -1,0 +1,63 @@
+.header-container {
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0px 9px 9px 0px rgba(0,0,0,0.20);
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.header-container .logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container .logo-header h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    margin-left: 30px;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .header-container .logo-header h1 {
+        display: none;
+    }
+}
+
+.header-container .logo-header img {
+    width: 40px;
+}
+
+.header-container ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container li {
+    list-style: none;
+    margin: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header-container li:hover {
+    background: linear-gradient(90deg, rgba(204,180,82,1) 0%, rgba(171,144,27,1) 29%, rgba(124,100,5,1) 100%);
+}
+
+@media(min-width: 701px) {
+    .header-container {
+        padding: 0 200px 0 200px;
+    }
+
+    .header-container li {
+        margin: 50px;
+    }
+}
